@@ -115,7 +115,6 @@
 		B2B3CED91296F637001BAC94 /* SSSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B3CED71296F637001BAC94 /* SSSwitch.m */; };
 		B2D8829413328EEF006B3F55 /* SSHUDWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D8829213328EEF006B3F55 /* SSHUDWindow.h */; };
 		B2D8829513328EEF006B3F55 /* SSHUDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D8829313328EEF006B3F55 /* SSHUDWindow.m */; };
-		B2D883C01332D636006B3F55 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D883BF1332D636006B3F55 /* QuartzCore.framework */; };
 		B2E241541301C71400F7DC3B /* SSAddressBarTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E2414E1301C71400F7DC3B /* SSAddressBarTextField.h */; };
 		B2E241551301C71400F7DC3B /* SSAddressBarTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2414F1301C71400F7DC3B /* SSAddressBarTextField.m */; };
 		B2E241561301C71400F7DC3B /* SSAddressBarTextFieldBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E241501301C71400F7DC3B /* SSAddressBarTextFieldBackgroundView.h */; };
@@ -128,6 +127,9 @@
 		B2EA9F6312F4A5E100C929D6 /* SSBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EA9F6112F4A5E100C929D6 /* SSBadgeView.m */; };
 		B2FC71BB1330424F00D4FCCF /* SSCollectionViewItemInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FC71BA1330424F00D4FCCF /* SSCollectionViewItemInternal.h */; };
 		B2FE26B9136684D400B97612 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FE26B8136684D400B97612 /* QuartzCore.framework */; };
+		E3173499155CB27400F36DDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FE26B8136684D400B97612 /* QuartzCore.framework */; };
+		E317349B155CB54F00F36DDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E317349A155CB54F00F36DDB /* QuartzCore.framework */; };
+		E317349C155CB54F00F36DDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E317349A155CB54F00F36DDB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -253,7 +255,6 @@
 		B2B456FC139078B80060C279 /* SSCollectionViewExtremityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCollectionViewExtremityTableViewCell.m; sourceTree = "<group>"; };
 		B2D8829213328EEF006B3F55 /* SSHUDWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHUDWindow.h; sourceTree = "<group>"; };
 		B2D8829313328EEF006B3F55 /* SSHUDWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHUDWindow.m; sourceTree = "<group>"; };
-		B2D883BF1332D636006B3F55 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = iphoneos3.0/System/Library/Frameworks/QuartzCore.framework; sourceTree = "<group>"; };
 		B2E2414E1301C71400F7DC3B /* SSAddressBarTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAddressBarTextField.h; sourceTree = "<group>"; };
 		B2E2414F1301C71400F7DC3B /* SSAddressBarTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAddressBarTextField.m; sourceTree = "<group>"; };
 		B2E241501301C71400F7DC3B /* SSAddressBarTextFieldBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAddressBarTextFieldBackgroundView.h; sourceTree = "<group>"; };
@@ -267,6 +268,7 @@
 		B2FC71BA1330424F00D4FCCF /* SSCollectionViewItemInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCollectionViewItemInternal.h; sourceTree = "<group>"; };
 		B2FE26B8136684D400B97612 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libSSToolkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSToolkit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E317349A155CB54F00F36DDB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 				B23910641357DCF700ADE21B /* Foundation.framework in Frameworks */,
 				B23910661357DCF700ADE21B /* UIKit.framework in Frameworks */,
 				B2FE26B9136684D400B97612 /* QuartzCore.framework in Frameworks */,
+				E317349C155CB54F00F36DDB /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +290,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3173499155CB27400F36DDB /* QuartzCore.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				B215051210583BBB00409ED4 /* UIKit.framework in Frameworks */,
-				B2D883C01332D636006B3F55 /* QuartzCore.framework in Frameworks */,
+				E317349B155CB54F00F36DDB /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,8 +325,8 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E317349A155CB54F00F36DDB /* QuartzCore.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
-				B2D883BF1332D636006B3F55 /* QuartzCore.framework */,
 				B215051110583BBB00409ED4 /* UIKit.framework */,
 			);
 			name = Frameworks;
