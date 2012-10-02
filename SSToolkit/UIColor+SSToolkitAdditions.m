@@ -22,7 +22,7 @@
 
 @implementation UIColor (SSToolkitAdditions)
 
-+ (UIColor *)colorWithHex:(NSString *)hex {
++ (UIColor *)colorWithHexString:(NSString *)hex {
 	// Remove `#`
 	if ([[hex substringWithRange:NSMakeRange(0, 1)] isEqualToString:@"#"]) {
 		hex = [hex substringFromIndex:1];

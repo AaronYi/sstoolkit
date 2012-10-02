@@ -23,7 +23,7 @@
  The default alpha value is `1.0`.
  
  */
-+ (UIColor *)colorWithHex:(NSString *)hex;
++ (UIColor *)colorWithHexString:(NSString *)hex;
 
 /**
  Returns the receiver's value as a hex string.
