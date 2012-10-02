@@ -20,6 +20,7 @@
 @synthesize textEdgeInsets = _textEdgeInsets;
 @synthesize clearButtonEdgeInsets = _clearButtonEdgeInsets;
 @synthesize placeholderTextColor = _placeholderTextColor;
+@synthesize type = _type;
 
 - (void)setPlaceholderTextColor:(UIColor *)placeholderTextColor {
 	_placeholderTextColor = placeholderTextColor;

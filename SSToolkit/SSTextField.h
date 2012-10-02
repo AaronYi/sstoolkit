@@ -54,4 +54,7 @@
  */
 @property (nonatomic, assign) UIEdgeInsets clearButtonEdgeInsets;
 
+//-- Custom: because just having `tag` really sucks when you're using bitshifted constants.
+@property (nonatomic, assign) NSUInteger type;
+
 @end
