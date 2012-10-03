@@ -142,10 +142,18 @@
 	
 	// Gradient
 	if (_gradient) {
-		CGPoint start = CGPointMake(0.0f, 0.0f);
-		CGPoint end = (_direction == SSGradientViewDirectionVertical ? CGPointMake(0.0f, rect.size.height) :
-					   CGPointMake(rect.size.width, 0.0f));
-		CGContextDrawLinearGradient(context, _gradient, start, end, 0);
+		if (_direction != SSGradientViewDirectionRadial) {
+			// Axial gradient
+			CGPoint start = CGPointMake(0.0f, 0.0f);
+			CGPoint end = (_direction == SSGradientViewDirectionVertical ? CGPointMake(0.0f, rect.size.height) :
+										 CGPointMake(rect.size.width, 0.0f));
+			CGContextDrawLinearGradient(context, _gradient, start, end, 0);
+		} else {
+			// Radial gradient
+			float radius = MIN(rect.size.width, rect.size.height);
+			CGPoint center = CGPointMake(rect.size.width / 2.0f, rect.size.height / 2.0f);
+			CGContextDrawRadialGradient(context, _gradient, center, 0, center, radius, kCGGradientDrawsAfterEndLocation);
+		}
 	}
 	
 	[super drawRect:rect];

@@ -15,8 +15,11 @@ typedef enum {
 	/** The gradient is horizontal. */
 	SSGradientViewDirectionHorizontal,
 	
-	/** The gradient is verticle. */
-	SSGradientViewDirectionVertical
+	/** The gradient is vertical. */
+	SSGradientViewDirectionVertical,
+	
+	/** The gradient is radial. */
+	SSGradientViewDirectionRadial,
 } SSGradientViewDirection;
 
 /**
