@@ -15,13 +15,25 @@
  
  A subclass can optionally override `- (void)cellImageForKey:(id)key` to show an image in the cell.
  */
+
+enum {
+	SSPickerTypeSingular = 0,
+	SSPickerTypeMultiple = 1,
+};
+typedef NSUInteger SSPickerType;
+
 @interface SSPickerViewController : UITableViewController
 
 @property (nonatomic, strong) NSArray *keys;
-@property (nonatomic, strong) id selectedKey;
+@property (nonatomic, strong) NSMutableArray *selectedKeys;
 @property (nonatomic, strong) NSIndexPath *currentIndexPath;
+@property (nonatomic) SSPickerType type;
+@property (nonatomic) BOOL shouldAutoReload;
+
+- (void)reloadData;
 
 - (void)loadKeys;
+- (void)dismissVia:(id)sender;
 - (NSString *)cellTextForKey:(id)key;
 - (UIImage *)cellImageForKey:(id)key;
 
