@@ -22,11 +22,13 @@
 
 - (void)hide {
 	self.alpha = 0.0f;
+	self.hidden = YES;
 }
 
 
 - (void)show {
 	self.alpha = 1.0f;
+	self.hidden = NO;
 }
 
 
@@ -34,7 +36,9 @@
 	UIView *view = self;
 	[UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
 		view.alpha = 0.0f;
-	} completion:nil];
+	} completion:^(BOOL finished) {
+		view.hidden = YES;
+	}];
 }
 
 
@@ -50,9 +54,10 @@
 
 - (void)fadeIn {
 	UIView *view = self;
+	view.hidden = NO;
 	[UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
 		view.alpha = 1.0f;
-	} completion:nil];
+	} completion:^(BOOL finished) {}];
 }
 
 
